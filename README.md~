@@ -1,13 +1,13 @@
 # symfonyAdminPanel
 symfonyAdminPanel
 
-# follow these steps after setup adminpanel
+# Follow these steps after setup adminpanel
 
-# create the database
+-- create the database
 1. run php app/console doctrine:database:create
 
-# update schema tables are created from entity
+-- update schema tables are created from entity
 2. run php app/console doctrine:schema:update --force
 
-# Getting default adminpanel credentials
+-- Getting default adminpanel credentials
 3. run php app/console admin:creds
