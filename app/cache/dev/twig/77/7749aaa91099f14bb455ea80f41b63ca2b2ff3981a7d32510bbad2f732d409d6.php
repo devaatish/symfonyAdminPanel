@@ -15,8 +15,8 @@ class __TwigTemplate_fdc63b65c224902d050dbf520b17ee97f8503f1ee793342f63512d4f7c4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_15f1ef4f8f01e90d74ad98f8e88d8c57889cc6c71d9ee9f684f499e1df928d10 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_15f1ef4f8f01e90d74ad98f8e88d8c57889cc6c71d9ee9f684f499e1df928d10->enter($__internal_15f1ef4f8f01e90d74ad98f8e88d8c57889cc6c71d9ee9f684f499e1df928d10_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:footer.html.twig"));
+        $__internal_3bc566aa0cd8130a9a042f7db6ed489504fb3b8698a2fc4947ef524edc1f4b37 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3bc566aa0cd8130a9a042f7db6ed489504fb3b8698a2fc4947ef524edc1f4b37->enter($__internal_3bc566aa0cd8130a9a042f7db6ed489504fb3b8698a2fc4947ef524edc1f4b37_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:footer.html.twig"));
 
         // line 1
         echo "<div class=\"page-footer\">
@@ -30,7 +30,7 @@ class __TwigTemplate_fdc63b65c224902d050dbf520b17ee97f8503f1ee793342f63512d4f7c4
     </div>
 </div>";
         
-        $__internal_15f1ef4f8f01e90d74ad98f8e88d8c57889cc6c71d9ee9f684f499e1df928d10->leave($__internal_15f1ef4f8f01e90d74ad98f8e88d8c57889cc6c71d9ee9f684f499e1df928d10_prof);
+        $__internal_3bc566aa0cd8130a9a042f7db6ed489504fb3b8698a2fc4947ef524edc1f4b37->leave($__internal_3bc566aa0cd8130a9a042f7db6ed489504fb3b8698a2fc4947ef524edc1f4b37_prof);
 
     }
 

@@ -15,8 +15,8 @@ class __TwigTemplate_e71deced4dd632349e583fd38da5364e9bea8df5f34334c4f8eb220f84b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b3edfc1da2bc03d800d65b10396cd4acdb418b3210a157122f82d3db5380d861 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b3edfc1da2bc03d800d65b10396cd4acdb418b3210a157122f82d3db5380d861->enter($__internal_b3edfc1da2bc03d800d65b10396cd4acdb418b3210a157122f82d3db5380d861_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:header.html.twig"));
+        $__internal_1938ab779a176a64185e47ae431ec89d648d9d96956273f5c8cfb30a610e5fb8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1938ab779a176a64185e47ae431ec89d648d9d96956273f5c8cfb30a610e5fb8->enter($__internal_1938ab779a176a64185e47ae431ec89d648d9d96956273f5c8cfb30a610e5fb8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:header.html.twig"));
 
         // line 1
         echo "   <div class=\"page-header navbar navbar-fixed-top\">
@@ -408,7 +408,10 @@ class __TwigTemplate_e71deced4dd632349e583fd38da5364e9bea8df5f34334c4f8eb220f84b
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/layouts/layout/img/avatar3_small.jpg"), "html", null, true);
         echo "\"/>
                         <span class=\"username\">
-                        Bob </span>
+                        ";
+        // line 369
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "get", array(0 => "name"), "method"), "html", null, true);
+        echo "</span>
                         <i class=\"fa fa-angle-down\"></i>
                         </a>
                         <ul class=\"dropdown-menu\">
@@ -439,7 +442,7 @@ class __TwigTemplate_e71deced4dd632349e583fd38da5364e9bea8df5f34334c4f8eb220f84b
                                 <i class=\"icon-lock\"></i> Lock Screen </a>
                             </li>
                             <li>
-                                <a href=\"login.html\">
+                                <a href=\"/logout\">
                                 <i class=\"icon-key\"></i> Log Out </a>
                             </li>
                         </ul>
@@ -460,7 +463,7 @@ class __TwigTemplate_e71deced4dd632349e583fd38da5364e9bea8df5f34334c4f8eb220f84b
     </div>
    ";
         
-        $__internal_b3edfc1da2bc03d800d65b10396cd4acdb418b3210a157122f82d3db5380d861->leave($__internal_b3edfc1da2bc03d800d65b10396cd4acdb418b3210a157122f82d3db5380d861_prof);
+        $__internal_1938ab779a176a64185e47ae431ec89d648d9d96956273f5c8cfb30a610e5fb8->leave($__internal_1938ab779a176a64185e47ae431ec89d648d9d96956273f5c8cfb30a610e5fb8_prof);
 
     }
 
@@ -476,7 +479,7 @@ class __TwigTemplate_e71deced4dd632349e583fd38da5364e9bea8df5f34334c4f8eb220f84b
 
     public function getDebugInfo()
     {
-        return array (  408 => 367,  243 => 205,  225 => 190,  207 => 175,  189 => 160,  171 => 145,  30 => 7,  22 => 1,);
+        return array (  413 => 369,  408 => 367,  243 => 205,  225 => 190,  207 => 175,  189 => 160,  171 => 145,  30 => 7,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -857,7 +860,7 @@ class __TwigTemplate_e71deced4dd632349e583fd38da5364e9bea8df5f34334c4f8eb220f84b
                         <a href=\"javascript:;\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" data-hover=\"dropdown\" data-close-others=\"true\">
                         <img alt=\"\" class=\"img-circle\" src=\"{{ asset('bundles/assets/layouts/layout/img/avatar3_small.jpg')}}\"/>
                         <span class=\"username\">
-                        Bob </span>
+                        {{ app.session.get('name') }}</span>
                         <i class=\"fa fa-angle-down\"></i>
                         </a>
                         <ul class=\"dropdown-menu\">
@@ -888,7 +891,7 @@ class __TwigTemplate_e71deced4dd632349e583fd38da5364e9bea8df5f34334c4f8eb220f84b
                                 <i class=\"icon-lock\"></i> Lock Screen </a>
                             </li>
                             <li>
-                                <a href=\"login.html\">
+                                <a href=\"/logout\">
                                 <i class=\"icon-key\"></i> Log Out </a>
                             </li>
                         </ul>

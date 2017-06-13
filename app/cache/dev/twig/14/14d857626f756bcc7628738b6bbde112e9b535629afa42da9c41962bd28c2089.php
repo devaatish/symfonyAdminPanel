@@ -15,8 +15,8 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8d75e8e64a1d0a2a98537a294e4e40a132c53ccc03f86bb9ace521691a65e204 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8d75e8e64a1d0a2a98537a294e4e40a132c53ccc03f86bb9ace521691a65e204->enter($__internal_8d75e8e64a1d0a2a98537a294e4e40a132c53ccc03f86bb9ace521691a65e204_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:sidebar.html.twig"));
+        $__internal_18971e2838427742df057e525ea0568f8c05738cbffec35a1c84bf04c6cd098d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_18971e2838427742df057e525ea0568f8c05738cbffec35a1c84bf04c6cd098d->enter($__internal_18971e2838427742df057e525ea0568f8c05738cbffec35a1c84bf04c6cd098d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:sidebar.html.twig"));
 
         // line 1
         echo "
@@ -52,14 +52,14 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                     <!-- END RESPONSIVE QUICK SEARCH FORM -->
                 </li>
                 <li class=\"start active \">
-                    <a href=\"index.html\">
+                    <a href=\"/admin\">
                     <i class=\"icon-home\"></i>
                     <span class=\"title\">Dashboard</span>
                     <span class=\"selected\"></span>
                     </a>
 
                 </li>
-                <li>
+              <!--  <li>
                     <a href=\"javascript:;\">
                     <i class=\"icon-basket\"></i>
                     <span class=\"title\">CMS</span>
@@ -78,10 +78,10 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                         </li>
                         
                     </ul>
-                </li>
+                </li>-->
                 
                 
-                <li>
+             <!--   <li>
                     <a href=\"javascript:;\">
                     <i class=\"icon-puzzle\"></i>
                     <span class=\"title\">UI Components</span>
@@ -102,7 +102,12 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                             Knob Circle Dials</a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
+                ";
+        // line 85
+        if (($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "get", array(0 => "role"), "method") == "admin")) {
+            // line 86
+            echo "
                 <li>
                     <a href=\"javascript:;\">
                     <i class=\"icon-settings\"></i>
@@ -144,8 +149,10 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                         </li>
                     </ul>
                 </li>
-                
-                <li>
+                ";
+        }
+        // line 129
+        echo "                <li>
                     <a href=\"javascript:;\">
                     <i class=\"icon-envelope-open\"></i>
                     <span class=\"title\">Email Templates</span>
@@ -166,7 +173,7 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                 </li>
                 
                 
-                <li>
+            <!--    <li>
                     <a href=\"javascript:;\">
                     <i class=\"icon-folder\"></i>
                     <span class=\"title\">Multi Level Menu</span>
@@ -213,9 +220,9 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                             Item 3 </a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
                 <li>
-                    <a href=\"javascript:;\">
+                    <a href=\"/admin/user\">
                     <i class=\"icon-user\"></i>
                     <span class=\"title\">User</span>
                     <span class=\"arrow \"></span>
@@ -239,7 +246,7 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
     </div>
   ";
         
-        $__internal_8d75e8e64a1d0a2a98537a294e4e40a132c53ccc03f86bb9ace521691a65e204->leave($__internal_8d75e8e64a1d0a2a98537a294e4e40a132c53ccc03f86bb9ace521691a65e204_prof);
+        $__internal_18971e2838427742df057e525ea0568f8c05738cbffec35a1c84bf04c6cd098d->leave($__internal_18971e2838427742df057e525ea0568f8c05738cbffec35a1c84bf04c6cd098d_prof);
 
     }
 
@@ -248,9 +255,14 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
         return "AdminBundle:Admin/Layout:sidebar.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  22 => 1,);
+        return array (  155 => 129,  110 => 86,  108 => 85,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -296,14 +308,14 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                     <!-- END RESPONSIVE QUICK SEARCH FORM -->
                 </li>
                 <li class=\"start active \">
-                    <a href=\"index.html\">
+                    <a href=\"/admin\">
                     <i class=\"icon-home\"></i>
                     <span class=\"title\">Dashboard</span>
                     <span class=\"selected\"></span>
                     </a>
 
                 </li>
-                <li>
+              <!--  <li>
                     <a href=\"javascript:;\">
                     <i class=\"icon-basket\"></i>
                     <span class=\"title\">CMS</span>
@@ -322,10 +334,10 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                         </li>
                         
                     </ul>
-                </li>
+                </li>-->
                 
                 
-                <li>
+             <!--   <li>
                     <a href=\"javascript:;\">
                     <i class=\"icon-puzzle\"></i>
                     <span class=\"title\">UI Components</span>
@@ -346,7 +358,9 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                             Knob Circle Dials</a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
+                {% if (app.session.get('role') == 'admin') %}
+
                 <li>
                     <a href=\"javascript:;\">
                     <i class=\"icon-settings\"></i>
@@ -388,7 +402,7 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                         </li>
                     </ul>
                 </li>
-                
+                {% endif %}
                 <li>
                     <a href=\"javascript:;\">
                     <i class=\"icon-envelope-open\"></i>
@@ -410,7 +424,7 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                 </li>
                 
                 
-                <li>
+            <!--    <li>
                     <a href=\"javascript:;\">
                     <i class=\"icon-folder\"></i>
                     <span class=\"title\">Multi Level Menu</span>
@@ -457,9 +471,9 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                             Item 3 </a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
                 <li>
-                    <a href=\"javascript:;\">
+                    <a href=\"/admin/user\">
                     <i class=\"icon-user\"></i>
                     <span class=\"title\">User</span>
                     <span class=\"arrow \"></span>

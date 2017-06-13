@@ -15,8 +15,8 @@ class __TwigTemplate_23d0eec27b5b9329b6ca4df4d4a696a321a54b84bbb6ce81b0553a6b5ff
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6c36cc08763926e9e9371fec3995ac41377bfec8f39bc14f7d876bf7dfa49ea9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6c36cc08763926e9e9371fec3995ac41377bfec8f39bc14f7d876bf7dfa49ea9->enter($__internal_6c36cc08763926e9e9371fec3995ac41377bfec8f39bc14f7d876bf7dfa49ea9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:include_top.html.twig"));
+        $__internal_896af7bf32cee798bb1c62a5a3e093ee3723eb60f26807a063743bb25493a4f4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_896af7bf32cee798bb1c62a5a3e093ee3723eb60f26807a063743bb25493a4f4->enter($__internal_896af7bf32cee798bb1c62a5a3e093ee3723eb60f26807a063743bb25493a4f4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:include_top.html.twig"));
 
         // line 1
         echo " <meta charset=\"utf-8\" />
@@ -65,34 +65,39 @@ class __TwigTemplate_23d0eec27b5b9329b6ca4df4d4a696a321a54b84bbb6ce81b0553a6b5ff
         // line 19
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/jqvmap/jqvmap/jqvmap.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type=\"text/css\" />
+
+        <link href=\"";
+        // line 21
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/pages/css/profile.min.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\" type=\"text/css\" />
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL STYLES -->
         <link href=\"";
-        // line 22
+        // line 24
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/css/components.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" id=\"style_components\" type=\"text/css\" />
         <link href=\"";
-        // line 23
+        // line 25
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/css/plugins.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type=\"text/css\" />
         <!-- END THEME GLOBAL STYLES -->
         <!-- BEGIN THEME LAYOUT STYLES -->
         <link href=\"";
-        // line 26
+        // line 28
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/layouts/layout/css/layout.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type=\"text/css\" />
         <link href=\"";
-        // line 27
+        // line 29
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/layouts/layout/css/themes/darkblue.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type=\"text/css\" id=\"style_color\" />
         <link href=\"";
-        // line 28
+        // line 30
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/layouts/layout/css/custom.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type=\"text/css\" />
         <!-- END THEME LAYOUT STYLES -->
         <link rel=\"shortcut icon\" href=\"favicon.ico\" />";
         
-        $__internal_6c36cc08763926e9e9371fec3995ac41377bfec8f39bc14f7d876bf7dfa49ea9->leave($__internal_6c36cc08763926e9e9371fec3995ac41377bfec8f39bc14f7d876bf7dfa49ea9_prof);
+        $__internal_896af7bf32cee798bb1c62a5a3e093ee3723eb60f26807a063743bb25493a4f4->leave($__internal_896af7bf32cee798bb1c62a5a3e093ee3723eb60f26807a063743bb25493a4f4_prof);
 
     }
 
@@ -108,7 +113,7 @@ class __TwigTemplate_23d0eec27b5b9329b6ca4df4d4a696a321a54b84bbb6ce81b0553a6b5ff
 
     public function getDebugInfo()
     {
-        return array (  90 => 28,  86 => 27,  82 => 26,  76 => 23,  72 => 22,  66 => 19,  62 => 18,  58 => 17,  54 => 16,  48 => 13,  44 => 12,  40 => 11,  36 => 10,  32 => 9,  22 => 1,);
+        return array (  95 => 30,  91 => 29,  87 => 28,  81 => 25,  77 => 24,  71 => 21,  66 => 19,  62 => 18,  58 => 17,  54 => 16,  48 => 13,  44 => 12,  40 => 11,  36 => 10,  32 => 9,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -140,6 +145,8 @@ class __TwigTemplate_23d0eec27b5b9329b6ca4df4d4a696a321a54b84bbb6ce81b0553a6b5ff
         <link href=\"{{ asset('bundles/assets/global/plugins/morris/morris.css')}}\" rel=\"stylesheet\" type=\"text/css\" />
         <link href=\"{{ asset('bundles/assets/global/plugins/fullcalendar/fullcalendar.min.css')}}\" rel=\"stylesheet\" type=\"text/css\" />
         <link href=\"{{ asset('bundles/assets/global/plugins/jqvmap/jqvmap/jqvmap.css')}}\" rel=\"stylesheet\" type=\"text/css\" />
+
+        <link href=\"{{ asset('bundles/assets/pages/css/profile.min.css')}}\" rel=\"stylesheet\" type=\"text/css\" />
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL STYLES -->
         <link href=\"{{ asset('bundles/assets/global/css/components.min.css')}}\" rel=\"stylesheet\" id=\"style_components\" type=\"text/css\" />

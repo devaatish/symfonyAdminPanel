@@ -110,9 +110,55 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AdminBundle\\Controller\\AdminController::indexAction',  '_route' => 'admin_admin_index',);
         }
 
+        if (0 === strpos($pathinfo, '/login')) {
+            // admin_admin_login
+            if ($pathinfo === '/login') {
+                return array (  '_controller' => 'AdminBundle\\Controller\\AdminController::loginAction',  '_route' => 'admin_admin_login',);
+            }
+
+            // admin_admin_login_check
+            if ($pathinfo === '/login_check') {
+                return array (  '_controller' => 'AdminBundle\\Controller\\AdminController::login_checkAction',  '_route' => 'admin_admin_login_check',);
+            }
+
+        }
+
+        // admin_admin_forgot_password
+        if ($pathinfo === '/admin/forgot_password') {
+            return array (  '_controller' => 'AdminBundle\\Controller\\AdminController::forgot_passwordAction',  '_route' => 'admin_admin_forgot_password',);
+        }
+
+        // admin_admin_registration
+        if ($pathinfo === '/registration') {
+            return array (  '_controller' => 'AdminBundle\\Controller\\AdminController::registrationAction',  '_route' => 'admin_admin_registration',);
+        }
+
+        // admin_admin_logout
+        if ($pathinfo === '/logout') {
+            return array (  '_controller' => 'AdminBundle\\Controller\\AdminController::logoutAction',  '_route' => 'admin_admin_logout',);
+        }
+
+        // admin_admin_user
+        if ($pathinfo === '/admin/user') {
+            return array (  '_controller' => 'AdminBundle\\Controller\\AdminController::userAction',  '_route' => 'admin_admin_user',);
+        }
+
         // admin_default_index
         if ($pathinfo === '/default') {
             return array (  '_controller' => 'AdminBundle\\Controller\\DefaultController::indexAction',  '_route' => 'admin_default_index',);
+        }
+
+        if (0 === strpos($pathinfo, '/login')) {
+            // admin_security_login
+            if ($pathinfo === '/login1') {
+                return array (  '_controller' => 'AdminBundle\\Controller\\SecurityController::loginAction',  '_route' => 'admin_security_login',);
+            }
+
+            // admin_security_login_check
+            if ($pathinfo === '/login_check1') {
+                return array (  '_controller' => 'AdminBundle\\Controller\\SecurityController::login_checkAction',  '_route' => 'admin_security_login_check',);
+            }
+
         }
 
         // homepage
