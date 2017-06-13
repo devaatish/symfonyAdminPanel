@@ -160,10 +160,13 @@ class AdminController extends Controller
      */
     public function userAction()
     {
-    	return $this->render('AdminBundle:Admin:user_profile.html.twig',array(
-	        'error'         => '',
-	    ));
-        
+    	if ($this->session->has("name")) {
+    		return $this->render('AdminBundle:Admin:displayusers.html.twig',array(
+	        	'error'         => '',
+	    	));
+        }else{
+        	return $this->redirect('http://localhost:8000/login');
+        }
     }
 
 }
