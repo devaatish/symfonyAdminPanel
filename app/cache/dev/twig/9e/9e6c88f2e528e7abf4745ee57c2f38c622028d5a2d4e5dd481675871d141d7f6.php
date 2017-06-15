@@ -15,8 +15,8 @@ class __TwigTemplate_8c15ca8327ada650661a13a34c1c195053829d0663500223176995aedb6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8da3c96f9e56ffca8154c464035101d3846d809180f50e2f48d43da39ed98cd8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8da3c96f9e56ffca8154c464035101d3846d809180f50e2f48d43da39ed98cd8->enter($__internal_8da3c96f9e56ffca8154c464035101d3846d809180f50e2f48d43da39ed98cd8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:include_bottom.html.twig"));
+        $__internal_3ac7e3aa7f7485beb9026005c305094aaf034e7e9b111a57c6e2893a980c4ce4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3ac7e3aa7f7485beb9026005c305094aaf034e7e9b111a57c6e2893a980c4ce4->enter($__internal_3ac7e3aa7f7485beb9026005c305094aaf034e7e9b111a57c6e2893a980c4ce4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:include_bottom.html.twig"));
 
         // line 1
         echo "<script src=\"";
@@ -198,40 +198,73 @@ class __TwigTemplate_8c15ca8327ada650661a13a34c1c195053829d0663500223176995aedb6
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
 
+         
+         <script src=\"";
+        // line 78
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/jquery-validation/js/jquery.validate.min.js"), "html", null, true);
+        echo "\" type=\"text/javascript\"></script>
+
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
         <script src=\"";
-        // line 79
+        // line 82
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/scripts/app.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
 
         <!-- END THEME GLOBAL SCRIPTS -->
         <!-- BEGIN PAGE LEVEL SCRIPTS -->
         <script src=\"";
-        // line 83
+        // line 86
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/pages/scripts/dashboard.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
 
         <!-- END PAGE LEVEL SCRIPTS -->
         <!-- BEGIN THEME LAYOUT SCRIPTS -->
+
         <script src=\"";
-        // line 87
+        // line 91
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/scripts/datatable.js"), "html", null, true);
+        echo "\" type=\"text/javascript\"></script>
+
+         <script src=\"";
+        // line 93
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/datatables/datatables.min.js"), "html", null, true);
+        echo "\" type=\"text/javascript\"></script>
+
+         <script src=\"";
+        // line 95
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js"), "html", null, true);
+        echo "\" type=\"text/javascript\"></script>
+
+         <script src=\"";
+        // line 97
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/pages/scripts/table-datatables-editable.min.js"), "html", null, true);
+        echo "\" type=\"text/javascript\"></script>
+
+
+         <script src=\"";
+        // line 100
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/pages/scripts/form-validation.min.js"), "html", null, true);
+        echo "\" type=\"text/javascript\"></script>
+
+        <script src=\"";
+        // line 102
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/layouts/layout/scripts/layout.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
 
         <script src=\"";
-        // line 89
+        // line 104
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/layouts/layout/scripts/demo.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
 
         <script src=\"";
-        // line 91
+        // line 106
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/layouts/global/scripts/quick-sidebar.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         
         <!-- END THEME LAYOUT SCRIPTS -->";
         
-        $__internal_8da3c96f9e56ffca8154c464035101d3846d809180f50e2f48d43da39ed98cd8->leave($__internal_8da3c96f9e56ffca8154c464035101d3846d809180f50e2f48d43da39ed98cd8_prof);
+        $__internal_3ac7e3aa7f7485beb9026005c305094aaf034e7e9b111a57c6e2893a980c4ce4->leave($__internal_3ac7e3aa7f7485beb9026005c305094aaf034e7e9b111a57c6e2893a980c4ce4_prof);
 
     }
 
@@ -247,7 +280,7 @@ class __TwigTemplate_8c15ca8327ada650661a13a34c1c195053829d0663500223176995aedb6
 
     public function getDebugInfo()
     {
-        return array (  229 => 91,  224 => 89,  219 => 87,  212 => 83,  205 => 79,  198 => 75,  194 => 73,  190 => 71,  186 => 68,  182 => 66,  178 => 64,  174 => 62,  169 => 60,  164 => 58,  159 => 56,  154 => 54,  149 => 52,  144 => 50,  139 => 48,  134 => 46,  129 => 44,  124 => 42,  119 => 40,  114 => 38,  109 => 36,  104 => 34,  99 => 32,  94 => 30,  89 => 28,  84 => 26,  79 => 24,  74 => 22,  69 => 20,  64 => 18,  57 => 14,  52 => 12,  47 => 10,  42 => 8,  37 => 6,  32 => 4,  27 => 2,  22 => 1,);
+        return array (  262 => 106,  257 => 104,  252 => 102,  247 => 100,  241 => 97,  236 => 95,  231 => 93,  226 => 91,  218 => 86,  211 => 82,  204 => 78,  198 => 75,  194 => 73,  190 => 71,  186 => 68,  182 => 66,  178 => 64,  174 => 62,  169 => 60,  164 => 58,  159 => 56,  154 => 54,  149 => 52,  144 => 50,  139 => 48,  134 => 46,  129 => 44,  124 => 42,  119 => 40,  114 => 38,  109 => 36,  104 => 34,  99 => 32,  94 => 30,  89 => 28,  84 => 26,  79 => 24,  74 => 22,  69 => 20,  64 => 18,  57 => 14,  52 => 12,  47 => 10,  42 => 8,  37 => 6,  32 => 4,  27 => 2,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -336,6 +369,9 @@ class __TwigTemplate_8c15ca8327ada650661a13a34c1c195053829d0663500223176995aedb6
 
         <script src=\"{{ asset('bundles/assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js')}}\" type=\"text/javascript\"></script>
 
+         
+         <script src=\"{{ asset('bundles/assets/global/plugins/jquery-validation/js/jquery.validate.min.js')}}\" type=\"text/javascript\"></script>
+
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
         <script src=\"{{ asset('bundles/assets/global/scripts/app.min.js')}}\" type=\"text/javascript\"></script>
@@ -346,6 +382,18 @@ class __TwigTemplate_8c15ca8327ada650661a13a34c1c195053829d0663500223176995aedb6
 
         <!-- END PAGE LEVEL SCRIPTS -->
         <!-- BEGIN THEME LAYOUT SCRIPTS -->
+
+        <script src=\"{{ asset('bundles/assets/global/scripts/datatable.js')}}\" type=\"text/javascript\"></script>
+
+         <script src=\"{{ asset('bundles/assets/global/plugins/datatables/datatables.min.js')}}\" type=\"text/javascript\"></script>
+
+         <script src=\"{{ asset('bundles/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js')}}\" type=\"text/javascript\"></script>
+
+         <script src=\"{{ asset('bundles/assets/pages/scripts/table-datatables-editable.min.js')}}\" type=\"text/javascript\"></script>
+
+
+         <script src=\"{{ asset('bundles/assets/pages/scripts/form-validation.min.js')}}\" type=\"text/javascript\"></script>
+
         <script src=\"{{ asset('bundles/assets/layouts/layout/scripts/layout.min.js')}}\" type=\"text/javascript\"></script>
 
         <script src=\"{{ asset('bundles/assets/layouts/layout/scripts/demo.min.js')}}\" type=\"text/javascript\"></script>

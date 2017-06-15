@@ -21,20 +21,20 @@ class __TwigTemplate_68c1a9e38a52d2b87b2edb19fef32855455b091c3d3fa05e682ce3421df
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ad4139311deaf288da7364ce13fb10151bbb77cb39cf7cd75e992934769e93fe = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ad4139311deaf288da7364ce13fb10151bbb77cb39cf7cd75e992934769e93fe->enter($__internal_ad4139311deaf288da7364ce13fb10151bbb77cb39cf7cd75e992934769e93fe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin:displayusers.html.twig"));
+        $__internal_36e4343c3b4ca1ae513a26a44f6b9f652ce2f2591613e2d9379f9409391b6e05 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_36e4343c3b4ca1ae513a26a44f6b9f652ce2f2591613e2d9379f9409391b6e05->enter($__internal_36e4343c3b4ca1ae513a26a44f6b9f652ce2f2591613e2d9379f9409391b6e05_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin:displayusers.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ad4139311deaf288da7364ce13fb10151bbb77cb39cf7cd75e992934769e93fe->leave($__internal_ad4139311deaf288da7364ce13fb10151bbb77cb39cf7cd75e992934769e93fe_prof);
+        $__internal_36e4343c3b4ca1ae513a26a44f6b9f652ce2f2591613e2d9379f9409391b6e05->leave($__internal_36e4343c3b4ca1ae513a26a44f6b9f652ce2f2591613e2d9379f9409391b6e05_prof);
 
     }
 
     // line 2
     public function block_content($context, array $blocks = array())
     {
-        $__internal_d249cb3525ea3c18ea0d2cc4c9c1b97de811aeddfaec77dbe0c097bf1eef7bb8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d249cb3525ea3c18ea0d2cc4c9c1b97de811aeddfaec77dbe0c097bf1eef7bb8->enter($__internal_d249cb3525ea3c18ea0d2cc4c9c1b97de811aeddfaec77dbe0c097bf1eef7bb8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_9206f39091304c8a8c5f59c1d8582b18afb6ee48a02ee305e207792757e5e323 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9206f39091304c8a8c5f59c1d8582b18afb6ee48a02ee305e207792757e5e323->enter($__internal_9206f39091304c8a8c5f59c1d8582b18afb6ee48a02ee305e207792757e5e323_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 3
         echo "<div class=\"page-content-wrapper\">
@@ -42,86 +42,7 @@ class __TwigTemplate_68c1a9e38a52d2b87b2edb19fef32855455b091c3d3fa05e682ce3421df
                 <div style=\"min-height:1402px\" class=\"page-content\">
                     <!-- BEGIN PAGE HEADER-->
                     <!-- BEGIN THEME PANEL -->
-                    <div class=\"theme-panel hidden-xs hidden-sm\">
-                        <div class=\"toggler\"> </div>
-                        <div class=\"toggler-close\"> </div>
-                        <div class=\"theme-options\">
-                            <div class=\"theme-option theme-colors clearfix\">
-                                <span> THEME COLOR </span>
-                                <ul>
-                                    <li class=\"color-default current tooltips\" data-style=\"default\" data-container=\"body\" data-original-title=\"Default\"> </li>
-                                    <li class=\"color-darkblue tooltips\" data-style=\"darkblue\" data-container=\"body\" data-original-title=\"Dark Blue\"> </li>
-                                    <li class=\"color-blue tooltips\" data-style=\"blue\" data-container=\"body\" data-original-title=\"Blue\"> </li>
-                                    <li class=\"color-grey tooltips\" data-style=\"grey\" data-container=\"body\" data-original-title=\"Grey\"> </li>
-                                    <li class=\"color-light tooltips\" data-style=\"light\" data-container=\"body\" data-original-title=\"Light\"> </li>
-                                    <li class=\"color-light2 tooltips\" data-style=\"light2\" data-container=\"body\" data-html=\"true\" data-original-title=\"Light 2\"> </li>
-                                </ul>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Theme Style </span>
-                                <select class=\"layout-style-option form-control input-sm\">
-                                    <option value=\"square\" selected=\"selected\">Square corners</option>
-                                    <option value=\"rounded\">Rounded corners</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Layout </span>
-                                <select class=\"layout-option form-control input-sm\">
-                                    <option value=\"fluid\" selected=\"selected\">Fluid</option>
-                                    <option value=\"boxed\">Boxed</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Header </span>
-                                <select class=\"page-header-option form-control input-sm\">
-                                    <option value=\"fixed\" selected=\"selected\">Fixed</option>
-                                    <option value=\"default\">Default</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Top Menu Dropdown</span>
-                                <select class=\"page-header-top-dropdown-style-option form-control input-sm\">
-                                    <option value=\"light\" selected=\"selected\">Light</option>
-                                    <option value=\"dark\">Dark</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Sidebar Mode</span>
-                                <select class=\"sidebar-option form-control input-sm\">
-                                    <option value=\"fixed\">Fixed</option>
-                                    <option value=\"default\" selected=\"selected\">Default</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Sidebar Menu </span>
-                                <select class=\"sidebar-menu-option form-control input-sm\">
-                                    <option value=\"accordion\" selected=\"selected\">Accordion</option>
-                                    <option value=\"hover\">Hover</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Sidebar Style </span>
-                                <select class=\"sidebar-style-option form-control input-sm\">
-                                    <option value=\"default\" selected=\"selected\">Default</option>
-                                    <option value=\"light\">Light</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Sidebar Position </span>
-                                <select class=\"sidebar-pos-option form-control input-sm\">
-                                    <option value=\"left\" selected=\"selected\">Left</option>
-                                    <option value=\"right\">Right</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Footer </span>
-                                <select class=\"page-footer-option form-control input-sm\">
-                                    <option value=\"fixed\">Fixed</option>
-                                    <option value=\"default\" selected=\"selected\">Default</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <!-- END THEME PANEL -->
                     <!-- BEGIN PAGE BAR -->
                     <div class=\"page-bar\">
@@ -167,9 +88,7 @@ class __TwigTemplate_68c1a9e38a52d2b87b2edb19fef32855455b091c3d3fa05e682ce3421df
                     </div>
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
-                    <h3 class=\"page-title\"> Editable Datatables
-                        <small>editable datatable samples</small>
-                    </h3>
+                   
                     <!-- END PAGE TITLE-->
                     <!-- END PAGE HEADER-->
                     <div class=\"row\">
@@ -179,7 +98,18 @@ class __TwigTemplate_68c1a9e38a52d2b87b2edb19fef32855455b091c3d3fa05e682ce3421df
                                 <div class=\"portlet-title\">
                                     <div class=\"caption\">
                                         <i class=\"icon-settings font-red\"></i>
-                                        <span class=\"caption-subject font-red sbold uppercase\">Editable Table</span>
+                                        <span class=\"caption-subject font-red sbold uppercase\">Editable Table
+                                        ";
+        // line 65
+        if (((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")) != "")) {
+            // line 66
+            echo "                                            ";
+            echo twig_escape_filter($this->env, (isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "html", null, true);
+            echo "
+                                        ";
+        }
+        // line 68
+        echo "                                        </span>
                                     </div>
                                     <div class=\"actions\">
                                         <div class=\"btn-group btn-group-devided\" data-toggle=\"buttons\">
@@ -195,9 +125,10 @@ class __TwigTemplate_68c1a9e38a52d2b87b2edb19fef32855455b091c3d3fa05e682ce3421df
                                         <div class=\"row\">
                                             <div class=\"col-md-6\">
                                                 <div class=\"btn-group\">
-                                                    <button id=\"sample_editable_1_new\" class=\"btn green\"> Add New
+                                               <!--     <button id=\"sample_editable_1_new\" class=\"btn green\"> Add New
                                                         <i class=\"fa fa-plus\"></i>
-                                                    </button>
+                                                    </button>-->
+                                                    <a href=\"/addform\" class=\"btn green\" role=\"button\">Add New <i class=\"fa fa-plus\"></i></a>
                                                 </div>
                                             </div>
                                             <div class=\"col-md-6\">
@@ -220,65 +151,169 @@ class __TwigTemplate_68c1a9e38a52d2b87b2edb19fef32855455b091c3d3fa05e682ce3421df
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=\"dataTables_wrapper no-footer\" id=\"sample_editable_1_wrapper\"><div class=\"row\"><div class=\"col-md-6 col-sm-6\"><div id=\"sample_editable_1_length\" class=\"dataTables_length\"><label> <select class=\"form-control input-sm input-xsmall input-inline\" aria-controls=\"sample_editable_1\" name=\"sample_editable_1_length\"><option value=\"5\">5</option><option value=\"15\">15</option><option value=\"20\">20</option><option value=\"-1\">All</option></select> records</label></div></div><div class=\"col-md-6 col-sm-6\"><div class=\"dataTables_filter\" id=\"sample_editable_1_filter\"><label>Search:<input aria-controls=\"sample_editable_1\" placeholder=\"\" class=\"form-control input-sm input-small input-inline\" type=\"search\"></label></div></div></div><div class=\"table-scrollable\"><table style=\"width: 887px;\" aria-describedby=\"sample_editable_1_info\" role=\"grid\" class=\"table table-striped table-hover table-bordered dataTable no-footer\" id=\"sample_editable_1\">
+                                    <div class=\"dataTables_wrapper no-footer\" id=\"sample_editable_1_wrapper\"><div class=\"row\"><div class=\"col-md-6 col-sm-6\"><div id=\"sample_editable_1_length\" class=\"dataTables_length\">
+                                 <!--   <label> 
+                                    <select class=\"form-control input-sm input-xsmall input-inline\" aria-controls=\"sample_editable_1\" name=\"sample_editable_1_length\">
+                                    <option value=\"5\">5</option>
+                                    <option value=\"15\">15</option>
+                                    <option value=\"20\">20</option>
+                                    <option value=\"-1\">All</option>
+                                    </select> records</label>-->
+                                    </div></div><div class=\"col-md-6 col-sm-6\"><div class=\"dataTables_filter\" id=\"sample_editable_1_filter\">
+
+                             <!-- <label>Search:<input aria-controls=\"sample_editable_1\" placeholder=\"\" class=\"form-control input-sm input-small input-inline\" type=\"search\">
+                                    </label>-->
+                                    </div></div></div>
+
+                                    <div class=\"table-scrollable\">
+                                    <table style=\"width: 887px;\" aria-describedby=\"sample_editable_1_info\" role=\"grid\" class=\"table table-striped table-hover table-bordered dataTable no-footer\" id=\"sample_editable_1\">
                                         <thead>
-                                            <tr role=\"row\"><th aria-sort=\"ascending\" aria-label=\" Username : activate to sort column descending\" style=\"width: 123px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting_asc\"> Username </th><th aria-label=\" Full Name : activate to sort column ascending\" style=\"width: 145px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Full Name </th><th aria-label=\" Points : activate to sort column ascending\" style=\"width: 86px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Points </th><th aria-label=\" Notes : activate to sort column ascending\" style=\"width: 92px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Notes </th><th aria-label=\" Edit : activate to sort column ascending\" style=\"width: 62px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Edit </th><th aria-label=\" Delete : activate to sort column ascending\" style=\"width: 86px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Delete </th></tr>
+                                            <tr role=\"row\">
+                                            <th aria-sort=\"ascending\" aria-label=\" Username : activate to sort column descending\" style=\"width: 123px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting_asc\"> Username </th>
+
+                                            <th aria-label=\" Full Name : activate to sort column ascending\" style=\"width: 145px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Full Name </th>
+
+                                            <th aria-label=\" Emails : activate to sort column ascending\" style=\"width: 86px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Emails </th>
+
+                                            <th aria-label=\" Role : activate to sort column ascending\" style=\"width: 92px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Role </th>
+
+                                             ";
+        // line 136
+        if (($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "get", array(0 => "role"), "method") != "user")) {
+            echo " 
+                                            <th aria-label=\" Edit : activate to sort column ascending\" style=\"width: 62px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Edit </th>
+                                             ";
+        }
+        // line 139
+        echo "                                             ";
+        if (($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "get", array(0 => "role"), "method") == "admin")) {
+            echo " 
+                                            <th aria-label=\" Delete : activate to sort column ascending\" style=\"width: 86px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Delete </th>
+                                            ";
+        }
+        // line 141
+        echo "</tr>
                                         </thead>
-                                        <tbody>
+
+                                        <tbody>                                      
+                                  
                                             
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                        <tr class=\"odd\" role=\"row\"><td class=\"sorting_1\"></td><td class=\"\"></td><td></td><td></td><td></td><td></td></tr><tr class=\"even\" role=\"row\">
+                                        <tr class=\"odd\" role=\"row\"><td class=\"sorting_1\"></td><td class=\"\"></td><td></td><td></td><td></td><td></td></tr>
+                                      <!--  <tr class=\"even\" role=\"row\">
                                                 <td class=\"sorting_1\"> alex </td>
                                                 <td class=\"\"> Alex Nilson </td>
                                                 <td> 1234 </td>
                                                 <td class=\"center\"> power user </td>
-                                                <td>
+                                                     <td>
                                                     <a class=\"edit\" href=\"javascript:;\"> Edit </a>
                                                 </td>
                                                 <td>
                                                     <a class=\"delete\" href=\"javascript:;\"> Delete </a>
                                                 </td>
-                                            </tr><tr class=\"odd\" role=\"row\">
-                                                <td class=\"sorting_1\"> alex </td>
-                                                <td class=\"\"> Alex Nilson </td>
-                                                <td> 1234 </td>
-                                                <td class=\"center\"> power user </td>
+                                            </tr>-->
+                                            
+                                            ";
+        // line 161
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["data"]) ? $context["data"] : $this->getContext($context, "data")));
+        foreach ($context['_seq'] as $context["_key"] => $context["items"]) {
+            // line 162
+            echo "                                                ";
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($context["items"]);
+            foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
+                // line 163
+                echo "                                           <form action = \"/edit\">
+                                            <tr class=\"odd\" role=\"row\">
+                                                <td class=\"sorting_1\">";
+                // line 165
+                echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "username", array()), "html", null, true);
+                echo "</td>
+                                                <td class=\"\"> ";
+                // line 166
+                echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "fullname", array()), "html", null, true);
+                echo " </td>
+                                                <td> ";
+                // line 167
+                echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "email", array()), "html", null, true);
+                echo " </td>
+                                                <td class=\"center\">
+                                                    ";
+                // line 169
+                if (($this->getAttribute($context["item"], "isadmin", array()) == "1")) {
+                    // line 170
+                    echo "                                                    Admin
+                                                    ";
+                } elseif (($this->getAttribute(                // line 171
+$context["item"], "isadmin", array()) == "2")) {
+                    // line 172
+                    echo "                                                    Approver
+                                                    ";
+                } elseif (($this->getAttribute(                // line 173
+$context["item"], "isadmin", array()) == "3")) {
+                    // line 174
+                    echo "                                                    Editor
+                                                    ";
+                } elseif (($this->getAttribute(                // line 175
+$context["item"], "isadmin", array()) == "4")) {
+                    // line 176
+                    echo "                                                    Genral user
+                                                    </td>
+                                                    ";
+                }
+                // line 179
+                echo "                                                ";
+                if (($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "get", array(0 => "role"), "method") != "user")) {
+                    echo " 
                                                 <td>
-                                                    <a class=\"edit\" href=\"javascript:;\"> Edit </a>
+                                                  <!--  <a class=\"edit\" href=\"/edit\"> Edit </a> -->
+                                                  <a  href=\"/edit/";
+                    // line 182
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "id", array()), "html", null, true);
+                    echo "\"> Edit </a>
                                                 </td>
-                                                <td>
-                                                    <a class=\"delete\" href=\"javascript:;\"> Delete </a>
+                                                ";
+                }
+                // line 185
+                echo "                                                ";
+                if (($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "get", array(0 => "role"), "method") == "admin")) {
+                    // line 186
+                    echo "                                                <td>
+                                                  <!--  <a class=\"delete\" href=\"javascript:;\"> Delete </a>-->
+                                                    <a  href=\"/delete/";
+                    // line 188
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "id", array()), "html", null, true);
+                    echo "\"> Delete </a>
                                                 </td>
-                                            </tr><tr class=\"even\" role=\"row\">
-                                                <td class=\"sorting_1\"> gist124 </td>
-                                                <td class=\"\"> Nick Roberts </td>
-                                                <td> 62 </td>
-                                                <td class=\"center\"> new user </td>
-                                                <td>
-                                                    <a class=\"edit\" href=\"javascript:;\"> Edit </a>
-                                                </td>
-                                                <td>
-                                                    <a class=\"delete\" href=\"javascript:;\"> Delete </a>
-                                                </td>
-                                            </tr><tr class=\"odd\" role=\"row\">
-                                                <td class=\"sorting_1\"> goldweb </td>
-                                                <td class=\"\"> Sergio Jackson </td>
-                                                <td> 132 </td>
-                                                <td class=\"center\"> elite user </td>
-                                                <td>
-                                                    <a class=\"edit\" href=\"javascript:;\"> Edit </a>
-                                                </td>
-                                                <td>
-                                                    <a class=\"delete\" href=\"javascript:;\"> Delete </a>
-                                                </td>
-                                            </tr></tbody>
-                                    </table></div><div class=\"row\"><div class=\"col-md-5 col-sm-5\"><div aria-live=\"polite\" role=\"status\" id=\"sample_editable_1_info\" class=\"dataTables_info\">Showing 1 to 5 of 8 entries</div></div><div class=\"col-md-7 col-sm-7\"><div id=\"sample_editable_1_paginate\" class=\"dataTables_paginate paging_bootstrap_number\"><ul style=\"visibility: visible;\" class=\"pagination\"><li class=\"prev disabled\"><a href=\"#\" title=\"Prev\"><i class=\"fa fa-angle-left\"></i></a></li><li class=\"active\"><a href=\"#\">1</a></li><li><a href=\"#\">2</a></li><li class=\"next\"><a href=\"#\" title=\"Next\"><i class=\"fa fa-angle-right\"></i></a></li></ul></div></div></div></div>
+                                                ";
+                }
+                // line 191
+                echo "                                            </tr>
+                                            </form>
+                                                ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 194
+            echo "                                             ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['items'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 195
+        echo "
+                                            </tbody>
+                                    </table></div>
+                                    <div class=\"row\">
+                                    <div class=\"col-md-5 col-sm-5\">
+                               <!--     <div aria-live=\"polite\" role=\"status\" id=\"sample_editable_1_info\" class=\"dataTables_info\">Showing 1 to 5 of 8 entries</div>-->
+                                    </div>
+                                    <div class=\"col-md-7 col-sm-7\">
+                                    <div id=\"sample_editable_1_paginate\" class=\"dataTables_paginate paging_bootstrap_number\">
+                                <!--   <ul style=\"visibility: visible;\" class=\"pagination\">
+                                    <li class=\"prev disabled\"><a href=\"#\" title=\"Prev\"><i class=\"fa fa-angle-left\"></i></a></li><li class=\"active\"><a href=\"#\">1</a></li><li><a href=\"#\">2</a></li><li class=\"next\"><a href=\"#\" title=\"Next\"><i class=\"fa fa-angle-right\"></i></a></li></ul>-->
+                                    </div></div></div></div>
                                 </div>
                             </div>
                             <!-- END EXAMPLE TABLE PORTLET-->
@@ -289,7 +324,7 @@ class __TwigTemplate_68c1a9e38a52d2b87b2edb19fef32855455b091c3d3fa05e682ce3421df
             </div>
 ";
         
-        $__internal_d249cb3525ea3c18ea0d2cc4c9c1b97de811aeddfaec77dbe0c097bf1eef7bb8->leave($__internal_d249cb3525ea3c18ea0d2cc4c9c1b97de811aeddfaec77dbe0c097bf1eef7bb8_prof);
+        $__internal_9206f39091304c8a8c5f59c1d8582b18afb6ee48a02ee305e207792757e5e323->leave($__internal_9206f39091304c8a8c5f59c1d8582b18afb6ee48a02ee305e207792757e5e323_prof);
 
     }
 
@@ -305,7 +340,7 @@ class __TwigTemplate_68c1a9e38a52d2b87b2edb19fef32855455b091c3d3fa05e682ce3421df
 
     public function getDebugInfo()
     {
-        return array (  40 => 3,  34 => 2,  11 => 1,);
+        return array (  305 => 195,  299 => 194,  291 => 191,  285 => 188,  281 => 186,  278 => 185,  272 => 182,  265 => 179,  260 => 176,  258 => 175,  255 => 174,  253 => 173,  250 => 172,  248 => 171,  245 => 170,  243 => 169,  238 => 167,  234 => 166,  230 => 165,  226 => 163,  221 => 162,  217 => 161,  195 => 141,  188 => 139,  182 => 136,  112 => 68,  106 => 66,  104 => 65,  40 => 3,  34 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -325,86 +360,7 @@ class __TwigTemplate_68c1a9e38a52d2b87b2edb19fef32855455b091c3d3fa05e682ce3421df
                 <div style=\"min-height:1402px\" class=\"page-content\">
                     <!-- BEGIN PAGE HEADER-->
                     <!-- BEGIN THEME PANEL -->
-                    <div class=\"theme-panel hidden-xs hidden-sm\">
-                        <div class=\"toggler\"> </div>
-                        <div class=\"toggler-close\"> </div>
-                        <div class=\"theme-options\">
-                            <div class=\"theme-option theme-colors clearfix\">
-                                <span> THEME COLOR </span>
-                                <ul>
-                                    <li class=\"color-default current tooltips\" data-style=\"default\" data-container=\"body\" data-original-title=\"Default\"> </li>
-                                    <li class=\"color-darkblue tooltips\" data-style=\"darkblue\" data-container=\"body\" data-original-title=\"Dark Blue\"> </li>
-                                    <li class=\"color-blue tooltips\" data-style=\"blue\" data-container=\"body\" data-original-title=\"Blue\"> </li>
-                                    <li class=\"color-grey tooltips\" data-style=\"grey\" data-container=\"body\" data-original-title=\"Grey\"> </li>
-                                    <li class=\"color-light tooltips\" data-style=\"light\" data-container=\"body\" data-original-title=\"Light\"> </li>
-                                    <li class=\"color-light2 tooltips\" data-style=\"light2\" data-container=\"body\" data-html=\"true\" data-original-title=\"Light 2\"> </li>
-                                </ul>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Theme Style </span>
-                                <select class=\"layout-style-option form-control input-sm\">
-                                    <option value=\"square\" selected=\"selected\">Square corners</option>
-                                    <option value=\"rounded\">Rounded corners</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Layout </span>
-                                <select class=\"layout-option form-control input-sm\">
-                                    <option value=\"fluid\" selected=\"selected\">Fluid</option>
-                                    <option value=\"boxed\">Boxed</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Header </span>
-                                <select class=\"page-header-option form-control input-sm\">
-                                    <option value=\"fixed\" selected=\"selected\">Fixed</option>
-                                    <option value=\"default\">Default</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Top Menu Dropdown</span>
-                                <select class=\"page-header-top-dropdown-style-option form-control input-sm\">
-                                    <option value=\"light\" selected=\"selected\">Light</option>
-                                    <option value=\"dark\">Dark</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Sidebar Mode</span>
-                                <select class=\"sidebar-option form-control input-sm\">
-                                    <option value=\"fixed\">Fixed</option>
-                                    <option value=\"default\" selected=\"selected\">Default</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Sidebar Menu </span>
-                                <select class=\"sidebar-menu-option form-control input-sm\">
-                                    <option value=\"accordion\" selected=\"selected\">Accordion</option>
-                                    <option value=\"hover\">Hover</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Sidebar Style </span>
-                                <select class=\"sidebar-style-option form-control input-sm\">
-                                    <option value=\"default\" selected=\"selected\">Default</option>
-                                    <option value=\"light\">Light</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Sidebar Position </span>
-                                <select class=\"sidebar-pos-option form-control input-sm\">
-                                    <option value=\"left\" selected=\"selected\">Left</option>
-                                    <option value=\"right\">Right</option>
-                                </select>
-                            </div>
-                            <div class=\"theme-option\">
-                                <span> Footer </span>
-                                <select class=\"page-footer-option form-control input-sm\">
-                                    <option value=\"fixed\">Fixed</option>
-                                    <option value=\"default\" selected=\"selected\">Default</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <!-- END THEME PANEL -->
                     <!-- BEGIN PAGE BAR -->
                     <div class=\"page-bar\">
@@ -450,9 +406,7 @@ class __TwigTemplate_68c1a9e38a52d2b87b2edb19fef32855455b091c3d3fa05e682ce3421df
                     </div>
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
-                    <h3 class=\"page-title\"> Editable Datatables
-                        <small>editable datatable samples</small>
-                    </h3>
+                   
                     <!-- END PAGE TITLE-->
                     <!-- END PAGE HEADER-->
                     <div class=\"row\">
@@ -462,7 +416,11 @@ class __TwigTemplate_68c1a9e38a52d2b87b2edb19fef32855455b091c3d3fa05e682ce3421df
                                 <div class=\"portlet-title\">
                                     <div class=\"caption\">
                                         <i class=\"icon-settings font-red\"></i>
-                                        <span class=\"caption-subject font-red sbold uppercase\">Editable Table</span>
+                                        <span class=\"caption-subject font-red sbold uppercase\">Editable Table
+                                        {% if(error !='')%}
+                                            {{error}}
+                                        {% endif %}
+                                        </span>
                                     </div>
                                     <div class=\"actions\">
                                         <div class=\"btn-group btn-group-devided\" data-toggle=\"buttons\">
@@ -478,9 +436,10 @@ class __TwigTemplate_68c1a9e38a52d2b87b2edb19fef32855455b091c3d3fa05e682ce3421df
                                         <div class=\"row\">
                                             <div class=\"col-md-6\">
                                                 <div class=\"btn-group\">
-                                                    <button id=\"sample_editable_1_new\" class=\"btn green\"> Add New
+                                               <!--     <button id=\"sample_editable_1_new\" class=\"btn green\"> Add New
                                                         <i class=\"fa fa-plus\"></i>
-                                                    </button>
+                                                    </button>-->
+                                                    <a href=\"/addform\" class=\"btn green\" role=\"button\">Add New <i class=\"fa fa-plus\"></i></a>
                                                 </div>
                                             </div>
                                             <div class=\"col-md-6\">
@@ -503,65 +462,103 @@ class __TwigTemplate_68c1a9e38a52d2b87b2edb19fef32855455b091c3d3fa05e682ce3421df
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=\"dataTables_wrapper no-footer\" id=\"sample_editable_1_wrapper\"><div class=\"row\"><div class=\"col-md-6 col-sm-6\"><div id=\"sample_editable_1_length\" class=\"dataTables_length\"><label> <select class=\"form-control input-sm input-xsmall input-inline\" aria-controls=\"sample_editable_1\" name=\"sample_editable_1_length\"><option value=\"5\">5</option><option value=\"15\">15</option><option value=\"20\">20</option><option value=\"-1\">All</option></select> records</label></div></div><div class=\"col-md-6 col-sm-6\"><div class=\"dataTables_filter\" id=\"sample_editable_1_filter\"><label>Search:<input aria-controls=\"sample_editable_1\" placeholder=\"\" class=\"form-control input-sm input-small input-inline\" type=\"search\"></label></div></div></div><div class=\"table-scrollable\"><table style=\"width: 887px;\" aria-describedby=\"sample_editable_1_info\" role=\"grid\" class=\"table table-striped table-hover table-bordered dataTable no-footer\" id=\"sample_editable_1\">
+                                    <div class=\"dataTables_wrapper no-footer\" id=\"sample_editable_1_wrapper\"><div class=\"row\"><div class=\"col-md-6 col-sm-6\"><div id=\"sample_editable_1_length\" class=\"dataTables_length\">
+                                 <!--   <label> 
+                                    <select class=\"form-control input-sm input-xsmall input-inline\" aria-controls=\"sample_editable_1\" name=\"sample_editable_1_length\">
+                                    <option value=\"5\">5</option>
+                                    <option value=\"15\">15</option>
+                                    <option value=\"20\">20</option>
+                                    <option value=\"-1\">All</option>
+                                    </select> records</label>-->
+                                    </div></div><div class=\"col-md-6 col-sm-6\"><div class=\"dataTables_filter\" id=\"sample_editable_1_filter\">
+
+                             <!-- <label>Search:<input aria-controls=\"sample_editable_1\" placeholder=\"\" class=\"form-control input-sm input-small input-inline\" type=\"search\">
+                                    </label>-->
+                                    </div></div></div>
+
+                                    <div class=\"table-scrollable\">
+                                    <table style=\"width: 887px;\" aria-describedby=\"sample_editable_1_info\" role=\"grid\" class=\"table table-striped table-hover table-bordered dataTable no-footer\" id=\"sample_editable_1\">
                                         <thead>
-                                            <tr role=\"row\"><th aria-sort=\"ascending\" aria-label=\" Username : activate to sort column descending\" style=\"width: 123px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting_asc\"> Username </th><th aria-label=\" Full Name : activate to sort column ascending\" style=\"width: 145px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Full Name </th><th aria-label=\" Points : activate to sort column ascending\" style=\"width: 86px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Points </th><th aria-label=\" Notes : activate to sort column ascending\" style=\"width: 92px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Notes </th><th aria-label=\" Edit : activate to sort column ascending\" style=\"width: 62px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Edit </th><th aria-label=\" Delete : activate to sort column ascending\" style=\"width: 86px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Delete </th></tr>
+                                            <tr role=\"row\">
+                                            <th aria-sort=\"ascending\" aria-label=\" Username : activate to sort column descending\" style=\"width: 123px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting_asc\"> Username </th>
+
+                                            <th aria-label=\" Full Name : activate to sort column ascending\" style=\"width: 145px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Full Name </th>
+
+                                            <th aria-label=\" Emails : activate to sort column ascending\" style=\"width: 86px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Emails </th>
+
+                                            <th aria-label=\" Role : activate to sort column ascending\" style=\"width: 92px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Role </th>
+
+                                             {% if (app.session.get('role') != 'user') %} 
+                                            <th aria-label=\" Edit : activate to sort column ascending\" style=\"width: 62px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Edit </th>
+                                             {% endif %}
+                                             {% if (app.session.get('role') == 'admin') %} 
+                                            <th aria-label=\" Delete : activate to sort column ascending\" style=\"width: 86px;\" colspan=\"1\" rowspan=\"1\" aria-controls=\"sample_editable_1\" tabindex=\"0\" class=\"sorting\"> Delete </th>
+                                            {% endif %}</tr>
                                         </thead>
-                                        <tbody>
+
+                                        <tbody>                                      
+                                  
                                             
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                        <tr class=\"odd\" role=\"row\"><td class=\"sorting_1\"></td><td class=\"\"></td><td></td><td></td><td></td><td></td></tr><tr class=\"even\" role=\"row\">
+                                        <tr class=\"odd\" role=\"row\"><td class=\"sorting_1\"></td><td class=\"\"></td><td></td><td></td><td></td><td></td></tr>
+                                      <!--  <tr class=\"even\" role=\"row\">
                                                 <td class=\"sorting_1\"> alex </td>
                                                 <td class=\"\"> Alex Nilson </td>
                                                 <td> 1234 </td>
                                                 <td class=\"center\"> power user </td>
-                                                <td>
+                                                     <td>
                                                     <a class=\"edit\" href=\"javascript:;\"> Edit </a>
                                                 </td>
                                                 <td>
                                                     <a class=\"delete\" href=\"javascript:;\"> Delete </a>
                                                 </td>
-                                            </tr><tr class=\"odd\" role=\"row\">
-                                                <td class=\"sorting_1\"> alex </td>
-                                                <td class=\"\"> Alex Nilson </td>
-                                                <td> 1234 </td>
-                                                <td class=\"center\"> power user </td>
+                                            </tr>-->
+                                            
+                                            {% for items in data%}
+                                                {% for item in items%}
+                                           <form action = \"/edit\">
+                                            <tr class=\"odd\" role=\"row\">
+                                                <td class=\"sorting_1\">{{ item.username }}</td>
+                                                <td class=\"\"> {{ item.fullname }} </td>
+                                                <td> {{item.email}} </td>
+                                                <td class=\"center\">
+                                                    {% if(item.isadmin =='1')%}
+                                                    Admin
+                                                    {% elseif(item.isadmin =='2')%}
+                                                    Approver
+                                                    {% elseif(item.isadmin =='3')%}
+                                                    Editor
+                                                    {% elseif(item.isadmin =='4')%}
+                                                    Genral user
+                                                    </td>
+                                                    {% endif %}
+                                                {% if (app.session.get('role') != 'user') %} 
                                                 <td>
-                                                    <a class=\"edit\" href=\"javascript:;\"> Edit </a>
+                                                  <!--  <a class=\"edit\" href=\"/edit\"> Edit </a> -->
+                                                  <a  href=\"/edit/{{item.id}}\"> Edit </a>
                                                 </td>
+                                                {% endif %}
+                                                {% if (app.session.get('role') == 'admin') %}
                                                 <td>
-                                                    <a class=\"delete\" href=\"javascript:;\"> Delete </a>
+                                                  <!--  <a class=\"delete\" href=\"javascript:;\"> Delete </a>-->
+                                                    <a  href=\"/delete/{{item.id}}\"> Delete </a>
                                                 </td>
-                                            </tr><tr class=\"even\" role=\"row\">
-                                                <td class=\"sorting_1\"> gist124 </td>
-                                                <td class=\"\"> Nick Roberts </td>
-                                                <td> 62 </td>
-                                                <td class=\"center\"> new user </td>
-                                                <td>
-                                                    <a class=\"edit\" href=\"javascript:;\"> Edit </a>
-                                                </td>
-                                                <td>
-                                                    <a class=\"delete\" href=\"javascript:;\"> Delete </a>
-                                                </td>
-                                            </tr><tr class=\"odd\" role=\"row\">
-                                                <td class=\"sorting_1\"> goldweb </td>
-                                                <td class=\"\"> Sergio Jackson </td>
-                                                <td> 132 </td>
-                                                <td class=\"center\"> elite user </td>
-                                                <td>
-                                                    <a class=\"edit\" href=\"javascript:;\"> Edit </a>
-                                                </td>
-                                                <td>
-                                                    <a class=\"delete\" href=\"javascript:;\"> Delete </a>
-                                                </td>
-                                            </tr></tbody>
-                                    </table></div><div class=\"row\"><div class=\"col-md-5 col-sm-5\"><div aria-live=\"polite\" role=\"status\" id=\"sample_editable_1_info\" class=\"dataTables_info\">Showing 1 to 5 of 8 entries</div></div><div class=\"col-md-7 col-sm-7\"><div id=\"sample_editable_1_paginate\" class=\"dataTables_paginate paging_bootstrap_number\"><ul style=\"visibility: visible;\" class=\"pagination\"><li class=\"prev disabled\"><a href=\"#\" title=\"Prev\"><i class=\"fa fa-angle-left\"></i></a></li><li class=\"active\"><a href=\"#\">1</a></li><li><a href=\"#\">2</a></li><li class=\"next\"><a href=\"#\" title=\"Next\"><i class=\"fa fa-angle-right\"></i></a></li></ul></div></div></div></div>
+                                                {% endif %}
+                                            </tr>
+                                            </form>
+                                                {% endfor %}
+                                             {% endfor %}
+
+                                            </tbody>
+                                    </table></div>
+                                    <div class=\"row\">
+                                    <div class=\"col-md-5 col-sm-5\">
+                               <!--     <div aria-live=\"polite\" role=\"status\" id=\"sample_editable_1_info\" class=\"dataTables_info\">Showing 1 to 5 of 8 entries</div>-->
+                                    </div>
+                                    <div class=\"col-md-7 col-sm-7\">
+                                    <div id=\"sample_editable_1_paginate\" class=\"dataTables_paginate paging_bootstrap_number\">
+                                <!--   <ul style=\"visibility: visible;\" class=\"pagination\">
+                                    <li class=\"prev disabled\"><a href=\"#\" title=\"Prev\"><i class=\"fa fa-angle-left\"></i></a></li><li class=\"active\"><a href=\"#\">1</a></li><li><a href=\"#\">2</a></li><li class=\"next\"><a href=\"#\" title=\"Next\"><i class=\"fa fa-angle-right\"></i></a></li></ul>-->
+                                    </div></div></div></div>
                                 </div>
                             </div>
                             <!-- END EXAMPLE TABLE PORTLET-->

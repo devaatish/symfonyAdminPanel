@@ -113,7 +113,7 @@ class AdminController extends Controller
      * @Route("registration")
      */
     public function registrationAction(Request $request)
-    {
+    {//exit("===");
     	// or fetch the em via the container
     	$em = $this->get('doctrine')->getManager();
 
@@ -129,6 +129,7 @@ class AdminController extends Controller
     	$user->setUsername($request->get('username'));
     	$user->setDeleted('0');
     	$user->setCreatedon(); 
+    	$user->setIsadmin($request->get('roles')); 
 
     	$em->persist($user);
     	$em->flush(); 	
@@ -161,12 +162,121 @@ class AdminController extends Controller
     public function userAction()
     {
     	if ($this->session->has("name")) {
+
+    		$em = $this->get('doctrine')->getManager();
+    		 $records = $em->getRepository('AdminBundle:User')->selectuser($em);
     		return $this->render('AdminBundle:Admin:displayusers.html.twig',array(
 	        	'error'         => '',
+	        	'data'	=> array($records),
 	    	));
         }else{
         	return $this->redirect('http://localhost:8000/login');
         }
+    }
+
+    /**
+     * @Route("/edit/{id}")
+     */
+    public function editAction($id = "")
+    {    	
+    	$em = $this->get('doctrine')->getManager();
+    	$record = $em->getRepository('AdminBundle:User')->find($id);
+      	return $this->render('AdminBundle:Admin:edituser.html.twig',array(
+	        	'error'         => '',
+	        	'data'			=> array($record),
+	 	    	));
+    }
+
+    /**
+     * Matches /blog/*
+     *
+     * @Route("/delete/{id}", name="blog_show")
+     */
+    public function deleteAction($id = "")
+    {
+    	
+    	$em = $this->get('doctrine')->getManager();
+    	$adminentities = $em->getRepository('AdminBundle:User')->find($id);
+  		 $em->remove($adminentities);
+  		 $em->flush();    	
+    	return $this->render('AdminBundle:Admin:displayusers.html.twig',array(
+	        	'error'         => 'record deleted successfully',
+	        	'data'		=>'',
+	 	    	));      
+    }
+
+    /**
+     * @Route("/addform")
+     */
+    public function addformAction(Request $request)
+    {
+        return $this->render('AdminBundle:Admin:adduser.html.twig',array(
+                'error'         => 'Record inserted successfully',               
+            ));
+    }
+    /**
+     * @Route("/add")
+     */
+    public function addAction(Request $request)
+    {
+        $em = $this->get('doctrine')->getManager();
+        //echo $request->getMethod();exit;
+        
+            $user = new User();
+            $user->setFullname($request->get('fullname'));
+            $user->setEmail($request->get('email'));
+            $plainPassword = $request->get('password');
+            $encoded = $this->passwordencoderAction($plainPassword);
+            $user->setPassword($encoded);
+            $user->setAddress($request->get('address'));
+            $user->setCity($request->get('city'));
+            $user->setCountry($request->get('country'));
+            $user->setUsername($request->get('username'));
+            $user->setDeleted('0');
+            $user->setCreatedon(); 
+            $user->setIsadmin($request->get('role')); 
+
+            $em->persist($user);
+            $em->flush();   
+        
+    	$records = $em->getRepository('AdminBundle:User')->selectuser($em);
+        return $this->render('AdminBundle:Admin:displayusers.html.twig',array(
+                'error'         => 'Record inserted successfully',
+                'data'  => array($records),
+            ));
+    }
+
+    /**
+     * @Route("/update")
+     */
+    public function updateAction(Request $request)
+    {
+    	$id = $request->get('id');
+    	//echo $id;exit;
+    	$user = new User();
+    	$em = $this->getDoctrine()->getManager();
+    	$u = $em->getRepository('AdminBundle:User')->find($id);
+
+    			$u->setFullname($request->get('fullname'));
+		    	$u->setEmail($request->get('email'));
+		    	$plainPassword = $request->get('password');
+				$encoded = $this->passwordencoderAction($plainPassword);
+		    	$u->setPassword($encoded);
+		    	$u->setAddress($request->get('address'));
+		    	$u->setCity($request->get('city'));
+		    	$u->setCountry($request->get('country'));
+		    	$u->setUsername($request->get('username'));
+		    	$u->setDeleted('0');
+		    	$u->setUpdatedon(); 
+		    	$u->setIsadmin($request->get('role')); 
+		      	$em->flush();
+    	$records = $em->getRepository('AdminBundle:User')->selectuser($em);
+    		return $this->render('AdminBundle:Admin:displayusers.html.twig',array(
+	        	'error'         => '',
+	        	'data'	=> array($records),
+	    	));
+
+    		
     }
 
 }

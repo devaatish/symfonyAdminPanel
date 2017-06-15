@@ -15,8 +15,8 @@ class __TwigTemplate_e2b7d0a8a83f67555863a1ce7945fbe5b8716c61051a6ce0ce1fdd641aa
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_5f33f5816dedc32e574e5304f7527727df83116fde14367ca4e433c9c0422a99 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5f33f5816dedc32e574e5304f7527727df83116fde14367ca4e433c9c0422a99->enter($__internal_5f33f5816dedc32e574e5304f7527727df83116fde14367ca4e433c9c0422a99_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:content.html.twig"));
+        $__internal_d1153fab44becde83fd97e2efb09c2a516b7f6ea8dad72c7bee1382b7af8bb29 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d1153fab44becde83fd97e2efb09c2a516b7f6ea8dad72c7bee1382b7af8bb29->enter($__internal_d1153fab44becde83fd97e2efb09c2a516b7f6ea8dad72c7bee1382b7af8bb29_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:content.html.twig"));
 
         // line 1
         echo "<div class=\"page-content-wrapper\">
@@ -181,7 +181,7 @@ class __TwigTemplate_e2b7d0a8a83f67555863a1ce7945fbe5b8716c61051a6ce0ce1fdd641aa
     </div>
 </div>";
         
-        $__internal_5f33f5816dedc32e574e5304f7527727df83116fde14367ca4e433c9c0422a99->leave($__internal_5f33f5816dedc32e574e5304f7527727df83116fde14367ca4e433c9c0422a99_prof);
+        $__internal_d1153fab44becde83fd97e2efb09c2a516b7f6ea8dad72c7bee1382b7af8bb29->leave($__internal_d1153fab44becde83fd97e2efb09c2a516b7f6ea8dad72c7bee1382b7af8bb29_prof);
 
     }
 

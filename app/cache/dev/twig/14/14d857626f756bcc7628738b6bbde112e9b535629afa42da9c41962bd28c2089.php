@@ -15,8 +15,8 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_18971e2838427742df057e525ea0568f8c05738cbffec35a1c84bf04c6cd098d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_18971e2838427742df057e525ea0568f8c05738cbffec35a1c84bf04c6cd098d->enter($__internal_18971e2838427742df057e525ea0568f8c05738cbffec35a1c84bf04c6cd098d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:sidebar.html.twig"));
+        $__internal_1cfee0bf0154230e829d27ea356c5411e6107a06b84da4edfff2b1a266aae928 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1cfee0bf0154230e829d27ea356c5411e6107a06b84da4edfff2b1a266aae928->enter($__internal_1cfee0bf0154230e829d27ea356c5411e6107a06b84da4edfff2b1a266aae928_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:sidebar.html.twig"));
 
         // line 1
         echo "
@@ -27,28 +27,10 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
             <!-- BEGIN SIDEBAR MENU -->
             <ul class=\"page-sidebar-menu\" data-auto-scroll=\"true\" data-slide-speed=\"200\">
                 <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below \"sidebar-toggler-wrapper\" LI element -->
-                <li class=\"sidebar-toggler-wrapper\">
-                    <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
-                    <div class=\"sidebar-toggler\">
-                    </div>
-                    <!-- END SIDEBAR TOGGLER BUTTON -->
-                </li>
+               
                 <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below \"sidebar-search-wrapper\" LI element -->
                 <li class=\"sidebar-search-wrapper hidden-xs\">
-                    <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
-                    <!-- DOC: Apply \"sidebar-search-bordered\" class the below search form to have bordered search box -->
-                    <!-- DOC: Apply \"sidebar-search-bordered sidebar-search-solid\" class the below search form to have bordered & solid search box -->
-                    <form class=\"sidebar-search\" action=\"extra_search.html\" method=\"POST\">
-                        <a href=\"javascript:;\" class=\"remove\">
-                        <i class=\"icon-close\"></i>
-                        </a>
-                        <div class=\"input-group\">
-                            <input type=\"text\" class=\"form-control\" placeholder=\"Search...\">
-                            <span class=\"input-group-btn\">
-                            <a href=\"javascript:;\" class=\"btn submit\"><i class=\"icon-magnifier\"></i></a>
-                            </span>
-                        </div>
-                    </form>
+                   
                     <!-- END RESPONSIVE QUICK SEARCH FORM -->
                 </li>
                 <li class=\"start active \">
@@ -104,9 +86,9 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                     </ul>
                 </li>-->
                 ";
-        // line 85
+        // line 67
         if (($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "get", array(0 => "role"), "method") == "admin")) {
-            // line 86
+            // line 68
             echo "
                 <li>
                     <a href=\"javascript:;\">
@@ -151,7 +133,7 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
                 </li>
                 ";
         }
-        // line 129
+        // line 111
         echo "                <li>
                     <a href=\"javascript:;\">
                     <i class=\"icon-envelope-open\"></i>
@@ -246,7 +228,7 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
     </div>
   ";
         
-        $__internal_18971e2838427742df057e525ea0568f8c05738cbffec35a1c84bf04c6cd098d->leave($__internal_18971e2838427742df057e525ea0568f8c05738cbffec35a1c84bf04c6cd098d_prof);
+        $__internal_1cfee0bf0154230e829d27ea356c5411e6107a06b84da4edfff2b1a266aae928->leave($__internal_1cfee0bf0154230e829d27ea356c5411e6107a06b84da4edfff2b1a266aae928_prof);
 
     }
 
@@ -262,7 +244,7 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
 
     public function getDebugInfo()
     {
-        return array (  155 => 129,  110 => 86,  108 => 85,  22 => 1,);
+        return array (  137 => 111,  92 => 68,  90 => 67,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -283,28 +265,10 @@ class __TwigTemplate_71bffde11544374344a41d94231e55765bd37cf43da7d5a0792e3868d91
             <!-- BEGIN SIDEBAR MENU -->
             <ul class=\"page-sidebar-menu\" data-auto-scroll=\"true\" data-slide-speed=\"200\">
                 <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below \"sidebar-toggler-wrapper\" LI element -->
-                <li class=\"sidebar-toggler-wrapper\">
-                    <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
-                    <div class=\"sidebar-toggler\">
-                    </div>
-                    <!-- END SIDEBAR TOGGLER BUTTON -->
-                </li>
+               
                 <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below \"sidebar-search-wrapper\" LI element -->
                 <li class=\"sidebar-search-wrapper hidden-xs\">
-                    <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
-                    <!-- DOC: Apply \"sidebar-search-bordered\" class the below search form to have bordered search box -->
-                    <!-- DOC: Apply \"sidebar-search-bordered sidebar-search-solid\" class the below search form to have bordered & solid search box -->
-                    <form class=\"sidebar-search\" action=\"extra_search.html\" method=\"POST\">
-                        <a href=\"javascript:;\" class=\"remove\">
-                        <i class=\"icon-close\"></i>
-                        </a>
-                        <div class=\"input-group\">
-                            <input type=\"text\" class=\"form-control\" placeholder=\"Search...\">
-                            <span class=\"input-group-btn\">
-                            <a href=\"javascript:;\" class=\"btn submit\"><i class=\"icon-magnifier\"></i></a>
-                            </span>
-                        </div>
-                    </form>
+                   
                     <!-- END RESPONSIVE QUICK SEARCH FORM -->
                 </li>
                 <li class=\"start active \">

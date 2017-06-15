@@ -15,8 +15,8 @@ class __TwigTemplate_4189d42706f9c4b392aef5d725978b672683360e3398f2fa2a0f441ba5f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f8353cea223d469ec19520a7195ce02cc36069a81073422583d753c246c6398d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f8353cea223d469ec19520a7195ce02cc36069a81073422583d753c246c6398d->enter($__internal_f8353cea223d469ec19520a7195ce02cc36069a81073422583d753c246c6398d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin:login.html.twig"));
+        $__internal_0020c8eb12ab33234c545de14ebe7ff941c66ca2329dbef0dc39dd040c95a54f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0020c8eb12ab33234c545de14ebe7ff941c66ca2329dbef0dc39dd040c95a54f->enter($__internal_0020c8eb12ab33234c545de14ebe7ff941c66ca2329dbef0dc39dd040c95a54f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin:login.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -132,6 +132,11 @@ License: You must have a valid license purchased only from themeforest(the above
         echo "                </div>
                 <div class=\"form-group\">
                     <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                    <input type=\"hidden\" name=\"_csrf_token\" value=\"";
+        // line 74
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderCsrfToken("authenticate"), "html", null, true);
+        echo "\" >
+
                     <label class=\"control-label visible-ie8 visible-ie9\">Username</label>
                     <input class=\"form-control form-control-solid placeholder-no-fix\" type=\"text\" autocomplete=\"off\" placeholder=\"Username\" name=\"username\" value=\"\"/> </div>
                 <div class=\"form-group\">
@@ -171,13 +176,13 @@ License: You must have a valid license purchased only from themeforest(the above
             <!-- END LOGIN FORM -->
             <!-- BEGIN FORGOT PASSWORD FORM -->
             ";
-        // line 112
+        // line 114
         echo twig_include($this->env, $context, "AdminBundle:Admin:forgot_password.html.twig");
         echo "
             <!-- END FORGOT PASSWORD FORM -->
             <!-- BEGIN REGISTRATION FORM -->
             ";
-        // line 115
+        // line 117
         echo twig_include($this->env, $context, "AdminBundle:Admin:registration.html.twig");
         echo "
             <!-- END REGISTRATION FORM -->
@@ -185,71 +190,71 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class=\"copyright\"> 2014 © Metronic. Admin Dashboard Template. </div>
         <!--[if lt IE 9]>
 <script src=\"";
-        // line 120
+        // line 122
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/respond.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 121
+        // line 123
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/excanvas.min.js"), "html", null, true);
         echo "\"></script> 
 <![endif]-->
         <!-- BEGIN CORE PLUGINS -->
         <script src=\"";
-        // line 124
+        // line 126
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/jquery.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         <script src=\"";
-        // line 125
+        // line 127
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/bootstrap/js/bootstrap.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         <script src=\"";
-        // line 126
+        // line 128
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/js.cookie.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         <script src=\"";
-        // line 127
+        // line 129
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         <script src=\"";
-        // line 128
+        // line 130
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         <script src=\"";
-        // line 129
+        // line 131
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/jquery.blockui.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         <script src=\"";
-        // line 130
+        // line 132
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/uniform/jquery.uniform.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         <script src=\"";
-        // line 131
+        // line 133
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         <!-- END CORE PLUGINS -->
         <!-- BEGIN PAGE LEVEL PLUGINS -->
         <script src=\"";
-        // line 134
+        // line 136
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/jquery-validation/js/jquery.validate.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         <script src=\"";
-        // line 135
+        // line 137
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/jquery-validation/js/additional-methods.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         <script src=\"";
-        // line 136
+        // line 138
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/plugins/select2/js/select2.full.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
         <script src=\"";
-        // line 139
+        // line 141
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/global/scripts/app.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         <!-- END THEME GLOBAL SCRIPTS -->
         <!-- BEGIN PAGE LEVEL SCRIPTS -->
         <script src=\"";
-        // line 142
+        // line 144
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/assets/pages/scripts/login.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
         <!-- END PAGE LEVEL SCRIPTS -->
@@ -259,7 +264,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </html>";
         
-        $__internal_f8353cea223d469ec19520a7195ce02cc36069a81073422583d753c246c6398d->leave($__internal_f8353cea223d469ec19520a7195ce02cc36069a81073422583d753c246c6398d_prof);
+        $__internal_0020c8eb12ab33234c545de14ebe7ff941c66ca2329dbef0dc39dd040c95a54f->leave($__internal_0020c8eb12ab33234c545de14ebe7ff941c66ca2329dbef0dc39dd040c95a54f_prof);
 
     }
 
@@ -275,7 +280,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     public function getDebugInfo()
     {
-        return array (  253 => 142,  247 => 139,  241 => 136,  237 => 135,  233 => 134,  227 => 131,  223 => 130,  219 => 129,  215 => 128,  211 => 127,  207 => 126,  203 => 125,  199 => 124,  193 => 121,  189 => 120,  181 => 115,  175 => 112,  132 => 71,  126 => 69,  124 => 68,  108 => 55,  94 => 44,  88 => 41,  84 => 40,  78 => 37,  74 => 36,  68 => 33,  64 => 32,  60 => 31,  56 => 30,  52 => 29,  22 => 1,);
+        return array (  258 => 144,  252 => 141,  246 => 138,  242 => 137,  238 => 136,  232 => 133,  228 => 132,  224 => 131,  220 => 130,  216 => 129,  212 => 128,  208 => 127,  204 => 126,  198 => 123,  194 => 122,  186 => 117,  180 => 114,  137 => 74,  132 => 71,  126 => 69,  124 => 68,  108 => 55,  94 => 44,  88 => 41,  84 => 40,  78 => 37,  74 => 36,  68 => 33,  64 => 32,  60 => 31,  56 => 30,  52 => 29,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -361,6 +366,8 @@ License: You must have a valid license purchased only from themeforest(the above
                 </div>
                 <div class=\"form-group\">
                     <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                    <input type=\"hidden\" name=\"_csrf_token\" value=\"{{ csrf_token('authenticate') }}\" >
+
                     <label class=\"control-label visible-ie8 visible-ie9\">Username</label>
                     <input class=\"form-control form-control-solid placeholder-no-fix\" type=\"text\" autocomplete=\"off\" placeholder=\"Username\" name=\"username\" value=\"\"/> </div>
                 <div class=\"form-group\">

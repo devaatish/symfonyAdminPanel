@@ -15,8 +15,8 @@ class __TwigTemplate_a0d4b36d7e7c988333fce7e776d0e6364be80c135a9a8b9d85121ab74eb
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b5f1fd97aacf1c5ee5a60e9f5e4961e5b96d5645575f8bd06884a86ac3a1eea2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b5f1fd97aacf1c5ee5a60e9f5e4961e5b96d5645575f8bd06884a86ac3a1eea2->enter($__internal_b5f1fd97aacf1c5ee5a60e9f5e4961e5b96d5645575f8bd06884a86ac3a1eea2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin:forgot_password.html.twig"));
+        $__internal_e52f6c1481acce5acd80bc3373497f6b5afdb54571e00dac2cbee528810660ef = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e52f6c1481acce5acd80bc3373497f6b5afdb54571e00dac2cbee528810660ef->enter($__internal_e52f6c1481acce5acd80bc3373497f6b5afdb54571e00dac2cbee528810660ef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin:forgot_password.html.twig"));
 
         // line 1
         echo "<form class=\"forget-form\" action=\"index.html\" method=\"post\">
@@ -30,7 +30,7 @@ class __TwigTemplate_a0d4b36d7e7c988333fce7e776d0e6364be80c135a9a8b9d85121ab74eb
                 </div>
             </form>";
         
-        $__internal_b5f1fd97aacf1c5ee5a60e9f5e4961e5b96d5645575f8bd06884a86ac3a1eea2->leave($__internal_b5f1fd97aacf1c5ee5a60e9f5e4961e5b96d5645575f8bd06884a86ac3a1eea2_prof);
+        $__internal_e52f6c1481acce5acd80bc3373497f6b5afdb54571e00dac2cbee528810660ef->leave($__internal_e52f6c1481acce5acd80bc3373497f6b5afdb54571e00dac2cbee528810660ef_prof);
 
     }
 

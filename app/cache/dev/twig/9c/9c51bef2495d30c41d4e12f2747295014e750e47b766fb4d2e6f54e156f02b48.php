@@ -15,8 +15,8 @@ class __TwigTemplate_f8dd115a9c8356be472de805c4e67430890c033b0e72872f5d5e5b5173a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3a70403251e65663cbada8d0d0792ef71f6df9e522c139f25da585caf1eeabfe = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3a70403251e65663cbada8d0d0792ef71f6df9e522c139f25da585caf1eeabfe->enter($__internal_3a70403251e65663cbada8d0d0792ef71f6df9e522c139f25da585caf1eeabfe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:quick_sidebar.html.twig"));
+        $__internal_e6093c8528d1108a500a46df04518f668ec89cacd81f42cc4b8c890f248eb6b1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e6093c8528d1108a500a46df04518f668ec89cacd81f42cc4b8c890f248eb6b1->enter($__internal_e6093c8528d1108a500a46df04518f668ec89cacd81f42cc4b8c890f248eb6b1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin/Layout:quick_sidebar.html.twig"));
 
         // line 1
         echo "    
@@ -728,7 +728,7 @@ class __TwigTemplate_f8dd115a9c8356be472de805c4e67430890c033b0e72872f5d5e5b5173a
     </div>
     ";
         
-        $__internal_3a70403251e65663cbada8d0d0792ef71f6df9e522c139f25da585caf1eeabfe->leave($__internal_3a70403251e65663cbada8d0d0792ef71f6df9e522c139f25da585caf1eeabfe_prof);
+        $__internal_e6093c8528d1108a500a46df04518f668ec89cacd81f42cc4b8c890f248eb6b1->leave($__internal_e6093c8528d1108a500a46df04518f668ec89cacd81f42cc4b8c890f248eb6b1_prof);
 
     }
 

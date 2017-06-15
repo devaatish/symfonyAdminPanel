@@ -15,13 +15,18 @@ class __TwigTemplate_5410db66e857e2acf431d6ed7148740c7711fcebed6fc014b1037e7be0e
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b86db8e4fa0f7dc9c5c904851a8484165a66ce9ede2e601fba2a0c70cac18ad8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b86db8e4fa0f7dc9c5c904851a8484165a66ce9ede2e601fba2a0c70cac18ad8->enter($__internal_b86db8e4fa0f7dc9c5c904851a8484165a66ce9ede2e601fba2a0c70cac18ad8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin:registration.html.twig"));
+        $__internal_0fcb86de3994915e825d6d972cbfe1634716237e1490701651756e2acdf0cf23 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0fcb86de3994915e825d6d972cbfe1634716237e1490701651756e2acdf0cf23->enter($__internal_0fcb86de3994915e825d6d972cbfe1634716237e1490701651756e2acdf0cf23_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AdminBundle:Admin:registration.html.twig"));
 
         // line 1
         echo "<form class=\"register-form\" action=\"registration\" method=\"post\">
                 <h3 class=\"font-green\">Sign Up</h3>
                 <p class=\"hint\"> Enter your personal details below: </p>
+                <input type=\"hidden\" name=\"_csrf_token\" value=\"";
+        // line 4
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderCsrfToken("authenticate"), "html", null, true);
+        echo "\" >
+
                 <div class=\"form-group\">
                     <label class=\"control-label visible-ie8 visible-ie9\">Full Name</label>
                     <input class=\"form-control placeholder-no-fix\" type=\"text\" placeholder=\"Full Name\" name=\"fullname\" /> </div>
@@ -299,7 +304,7 @@ class __TwigTemplate_5410db66e857e2acf431d6ed7148740c7711fcebed6fc014b1037e7be0e
                 </div>
             </form>";
         
-        $__internal_b86db8e4fa0f7dc9c5c904851a8484165a66ce9ede2e601fba2a0c70cac18ad8->leave($__internal_b86db8e4fa0f7dc9c5c904851a8484165a66ce9ede2e601fba2a0c70cac18ad8_prof);
+        $__internal_0fcb86de3994915e825d6d972cbfe1634716237e1490701651756e2acdf0cf23->leave($__internal_0fcb86de3994915e825d6d972cbfe1634716237e1490701651756e2acdf0cf23_prof);
 
     }
 
@@ -308,9 +313,14 @@ class __TwigTemplate_5410db66e857e2acf431d6ed7148740c7711fcebed6fc014b1037e7be0e
         return "AdminBundle:Admin:registration.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  22 => 1,);
+        return array (  27 => 4,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -326,6 +336,8 @@ class __TwigTemplate_5410db66e857e2acf431d6ed7148740c7711fcebed6fc014b1037e7be0e
         return new Twig_Source("<form class=\"register-form\" action=\"registration\" method=\"post\">
                 <h3 class=\"font-green\">Sign Up</h3>
                 <p class=\"hint\"> Enter your personal details below: </p>
+                <input type=\"hidden\" name=\"_csrf_token\" value=\"{{ csrf_token('authenticate') }}\" >
+
                 <div class=\"form-group\">
                     <label class=\"control-label visible-ie8 visible-ie9\">Full Name</label>
                     <input class=\"form-control placeholder-no-fix\" type=\"text\" placeholder=\"Full Name\" name=\"fullname\" /> </div>

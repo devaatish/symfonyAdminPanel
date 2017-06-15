@@ -10,6 +10,9 @@ use Symfony\Component\Console\Output\OutputInterface;
 use AdminBundle\Entity\User;
 use AdminBundle\Entity\Role;
 use AdminBundle\Entity\RoleUser;
+use AdminBundle\Entity\RoleUserPermission;
+use AdminBundle\Entity\Permissions;
+
 
 
 class AdminCredsCommand extends ContainerAwareCommand
@@ -38,6 +41,48 @@ class AdminCredsCommand extends ContainerAwareCommand
         $data = $query->getOneorNullResult(\Doctrine\ORM\Query::HYDRATE_ARRAY);
         $c = count($data);
         if(empty($c)){ 
+
+          //
+
+            $permissions = [
+                            [
+                                'name' => 'add-update-delete',
+                                'display_name' => 'Admin',
+                                'description' => 'Super admin'
+                            ],
+                            [
+                                'name' => 'add-update',
+                                'display_name' => 'Approver',
+                                'description' => 'Approver'
+                            ],
+                            [
+                                'name' => 'update',
+                                'display_name' => 'Editor',
+                                'description' => 'Editor'
+                            ],
+                            [
+                                'name' => 'add',
+                                'display_name' => 'General User',
+                                'description' => 'General User'
+                            ],
+                            
+                       ];
+
+                        foreach($permissions as $key) {
+                          $p = new Permissions();   
+                           //echo $key['name'];
+
+                           $p->setName($key['name']);
+                           $p->setDisplayName($key['display_name']);
+                           $p->setDescription($key['description']);
+                           $p->setCreatedon();
+                           $em->persist($p);
+                           if($key['name']=='add-update-delete'){
+                            $em->flush();
+                               $permissionid =$p->getId();                              
+                           }                            
+                       } 
+
             $roles = [
                             [
                                 'name' => 'admin',
@@ -77,7 +122,7 @@ class AdminCredsCommand extends ContainerAwareCommand
                                $roleid =$r->getId();                              
                            }                            
                        } 
-
+                    //user inserted
                     $user = new User();      
                     $user->setFullname('adminuser');
                     $user->setEmail('admin@gmail.com');
@@ -92,10 +137,12 @@ class AdminCredsCommand extends ContainerAwareCommand
                     $em->persist($user);
                     $em->flush(); 
 
+                    //roleuser entry
                     $userid = $user->getId();  
-                    $ru = new RoleUser();                         
+                    $ru = new RoleUserPermission();                         
                     $ru->setUserId($userid);  
-                    $ru->setRoleId($roleid);   
+                    $ru->setRoleId($roleid); 
+                    $ru->setPermissionId($permissionid);  
                     $ru->setCreatedon(); 
                     $em->persist($ru);
                      $em->flush();

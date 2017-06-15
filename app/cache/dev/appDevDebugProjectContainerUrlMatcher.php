@@ -143,6 +143,34 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AdminBundle\\Controller\\AdminController::userAction',  '_route' => 'admin_admin_user',);
         }
 
+        // admin_admin_edit
+        if (0 === strpos($pathinfo, '/edit') && preg_match('#^/edit(?:/(?P<id>[^/]++))?$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_admin_edit')), array (  'id' => '',  '_controller' => 'AdminBundle\\Controller\\AdminController::editAction',));
+        }
+
+        // blog_show
+        if (0 === strpos($pathinfo, '/delete') && preg_match('#^/delete(?:/(?P<id>[^/]++))?$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog_show')), array (  'id' => '',  '_controller' => 'AdminBundle\\Controller\\AdminController::deleteAction',));
+        }
+
+        if (0 === strpos($pathinfo, '/add')) {
+            // admin_admin_addform
+            if ($pathinfo === '/addform') {
+                return array (  '_controller' => 'AdminBundle\\Controller\\AdminController::addformAction',  '_route' => 'admin_admin_addform',);
+            }
+
+            // admin_admin_add
+            if ($pathinfo === '/add') {
+                return array (  '_controller' => 'AdminBundle\\Controller\\AdminController::addAction',  '_route' => 'admin_admin_add',);
+            }
+
+        }
+
+        // admin_admin_update
+        if ($pathinfo === '/update') {
+            return array (  '_controller' => 'AdminBundle\\Controller\\AdminController::updateAction',  '_route' => 'admin_admin_update',);
+        }
+
         // admin_default_index
         if ($pathinfo === '/default') {
             return array (  '_controller' => 'AdminBundle\\Controller\\DefaultController::indexAction',  '_route' => 'admin_default_index',);

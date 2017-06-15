@@ -1,6 +1,8 @@
 <form class="register-form" action="registration" method="post">
                 <h3 class="font-green">Sign Up</h3>
                 <p class="hint"> Enter your personal details below: </p>
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}" >
+
                 <div class="form-group">
                     <label class="control-label visible-ie8 visible-ie9">Full Name</label>
                     <input class="form-control placeholder-no-fix" type="text" placeholder="Full Name" name="fullname" /> </div>
